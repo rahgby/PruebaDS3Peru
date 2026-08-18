@@ -12,34 +12,45 @@
       </div>
 
       <!-- Info de contacto -->
-      <div class="flex space-x-8 text-black">
-        <div class="flex items-center">
-          <i class="fas fa-phone-alt mr-2 text-black "></i>
-          <div>
-            <p class="text-sm font-bold">533-4339</p>
-            <p class="text-sm font-bold">994-428-965</p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <i class="fas fa-phone-alt mr-2 text-black "></i>
-          <div>
-            <p class="text-sm font-bold">99653-3223</p>
-            <p class="text-sm font-bold">937-514-867</p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <i class="fas fa-envelope mr-2 text-black "></i>
-          <span class="text-sm font-bold">netperu100@hotmail.com</span>
-        </div>
-        <div class="flex items-center">
-          <i class="fas fa-map-marker-alt mr-2 text-black "></i>
-          <span class="text-sm font-bold">Lima, PERÚ</span>
-        </div>
-        <div>
-          <img src="https://www.ds3comunicaciones.com/cisco/images/cisco-gif.gif" alt="cisco" class="h-10" />
-        </div>
-      </div>
+<div class="flex space-x-8 text-black">
+  <div class="flex items-center gap-2">
+    <span class="flex items-center justify-center w-9 h-9 rounded-full flex-shrink-0">
+      <i class="fas fa-phone-alt text-sm"></i>
+    </span>
+    <div>
+      <p class="text-sm font-bold leading-tight">533-4339</p>
+      <p class="text-sm font-bold leading-tight">994-428-965</p>
+    </div>
+  </div>
 
+  <div class="flex items-center gap-2">
+    <span class="flex items-center justify-center w-9 h-9 rounded-full flex-shrink-0">
+      <i class="fas fa-phone-alt text-sm"></i>
+    </span>
+    <div>
+      <p class="text-sm font-bold leading-tight">99653-3223</p>
+      <p class="text-sm font-bold leading-tight">937-514-867</p>
+    </div>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span class="flex items-center justify-center w-9 h-9 rounded-full flex-shrink-0">
+      <i class="fas fa-envelope text-sm"></i>
+    </span>
+    <span class="text-sm font-bold">netperu100@hotmail.com</span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span class="flex items-center justify-center w-9 h-9 rounded-full flex-shrink-0">
+      <i class="fas fa-map-marker-alt text-sm"></i>
+    </span>
+    <span class="text-sm font-bold">Lima, PERÚ</span>
+  </div>
+
+  <div class="flex items-center">
+    <img src="https://www.ds3comunicaciones.com/cisco/images/cisco-gif.gif" alt="cisco" class="h-10" />
+  </div>
+</div>
       <!-- Botón de búsqueda -->
       <div class="flex items-center">
         <button
@@ -51,57 +62,36 @@
       </div>
     </div>
 
-    <!-- Mobile Navbar -->
-    <div class="lg:hidden flex flex-col gap-2">
-      <!-- navbar superior  -->
-      <div class="flex justify-between items-center py-2">
-        <!-- div izquierdo -->
-        <div class="flex gap-1">
-          <!-- boton hamburgesa -->
-          <button
-            id="mobile-menu-button"
-            class="p-2 rounded-full hover:bg-gray-300 transition-colors"
-          >
-            <i class="fas fa-bars text-black"></i>
-          </button>
+       <!-- Mobile Navbar -->
+    <div class="lg:hidden flex justify-between items-center py-3">
+      <!-- boton hamburgesa -->
+      <button
+        id="mobile-menu-button"
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition-colors shadow-sm"
+        aria-label="Abrir menú"
+      >
+        <i class="fas fa-bars text-lg"></i>
+      </button>
 
-          <!-- Logo -->
-          <div class="flex items-center gap-2">
-            <img
-              src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg"
-              alt="NetPeru Logo"
-              class="h-10"
-            />
-            <img
-              src="http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif"
-              alt="NetPeru Logo"
-              class="h-10"
-            />
-          </div>
-        </div>
-
-        <!-- Botones buscar -->
-        <button
-          id="mobile-search-button"
-          class="p-2 rounded-md hover:bg-gray-300 transition-colors border border-black flex gap-3 items-center"
-        >
-          <i class="fas fa-search text-black"></i>
-        </button>
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img
+          src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg"
+          alt="NetPeru Logo"
+          class="h-10 object-contain"
+        />
       </div>
 
-      <!-- nabvar inferior -->
-      <div class="py-2 pl-3">
-        <div class="flex items-start">
-          <i class="fas fa-phone-alt mt-1 mr-1 text-black"></i>
-          <p class="">996533223</p>
-          <i class="pl-4 fas fa-phone-alt mt-1 mr-1 text-black"></i>
-          <p class="">994428965</p>
-        </div>
-        <div class="flex items-center">
-          <i class="fas fa-envelope mr-1 text-black"></i>
-          <span>netperu100@hotmail.com</span>
-        </div>
-      </div>
+      <!-- Botón buscar -->
+      <button
+        id="mobile-search-button"
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition-colors shadow-sm"
+        aria-label="Buscar"
+      >
+        <i class="fas fa-magnifying-glass text-lg"></i>
+      </button>
+    </div>
+     
     </div>
   </div>
 
